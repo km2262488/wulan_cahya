@@ -29,7 +29,7 @@ class bcolors:
 
 os.system("clear")
 os.system("https://github.com/Kodekeras24")
-print("\033[37mWelcome to Zona Blackphanter")
+print("\033[37mWelcome to Zona Blackphanter\033[0m")
 time.sleep(2)
 print("Loading.......")
 
