@@ -120,9 +120,7 @@ for y in range(threads):
 	if choice == 'y':
 		th = threading.Thread(target = run)
 		th.start()
-		th = threading.Thread(target = run2)
-		th.start()
 	else:
-	        th = threading.Thread(target = run3)
+	        th = threading.Thread(target = run2)
 		
 
