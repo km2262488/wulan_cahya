@@ -113,7 +113,6 @@ def run2():
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
 			
-            
 def run3():
 	data = random._urandom(818)
 	i = random.choice(("[+]","[-]"))
@@ -129,7 +128,6 @@ def run3():
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
             
-  
 def run4():
 	data = random._urandom(16)
 	i = random.choice(("[+]","[-]"))
@@ -154,7 +152,6 @@ for y in range(threads):
 		th.start()
 		th = threading.Thread(target = run3)
 		th.start()
-	else:
-		th = threading.Thread(target = run4)
+	        th = threading.Thread(target = run4)
 		th.start()
 		
