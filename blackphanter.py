@@ -79,7 +79,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i + "\033[35mtcp\033[32mנשלח באופן אקראי\033[0m")
+			print(i + "\033[35mtcp  \033[32mנשלח באופן אקראי\033[0m")
 		except:
 			print("\033[31m[!] \033[92m May be down..!\033[0m")
 
