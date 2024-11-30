@@ -93,7 +93,6 @@ def run():
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
 			x = threading.Thread(target=thread_function, args=(index,) ,  daemon=True)
-                        threads.append(x)
                         x.start()
 				s.sendto(data,addr)
 			print(i + "\033[35mtcp  \033[32mנשלח באופן אקראי\033[0m")
