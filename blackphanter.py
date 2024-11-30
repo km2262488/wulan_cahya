@@ -152,6 +152,7 @@ for y in range(threads):
 		th.start()
 		th = threading.Thread(target = run3)
 		th.start()
+	else:
 	        th = threading.Thread(target = run4)
 		th.start()
 		
