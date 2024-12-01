@@ -126,7 +126,7 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"Attack Sent!!!")
+			print("[+]  \033[94mAttack Sent!!!\033[0m")
 		except:
 			s.close()
 			print("[-]  \033[31mMay be down\033[0m")
