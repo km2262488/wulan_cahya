@@ -71,19 +71,7 @@ choice = str(input("\033[31m (y/n) :\033[0m"))
 times = int(input("\033[33m Time :\033[0m"))
 threads = int(input("\033[37m Threads :\033[0m"))
 
-time.sleep(5),
-print("\033[33m  ⟩⟩  KALA DUNIA DIAM \033[0m "),
-time.sleep(5),
-print("\033[32m  ⟩⟩  DENGAN SEGALA BENTUK \033[0m "),
-time.sleep(5),
-print("\033[91m  ⟩⟩  TERORISME \033[0m "),
-time.sleep(5),
-print("\033[98m  ⟩⟩  DAN GENOSIDA \033[0m "),
-time.sleep(5),
-print("\033[96m  ⟩⟩  KAMI BANGKIT \033[0m "),
-time.sleep(5),
-print("\033[95m  ⟩⟩  MEMBERIKAN PERINGATAN...!! \033[0m "),
-time.sleep(5),
+
 
 def run():
 	data = random._urandom(1024)
